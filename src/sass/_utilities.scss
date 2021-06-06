@@ -1,0 +1,56 @@
+%title {
+	color: rgb(0, 102, 255);
+	font-size: 40px;
+	font-display: bold;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 90px;
+}
+
+%btn {
+	margin-top: 60px;
+	font-size: 16px;
+	font-display: bold;
+	text-decoration: none;
+	margin-right: 10px;
+	border-radius: 30px;
+	height: 45px;
+	width: 150px;
+	outline: none;
+}
+
+%project {
+	flex: 1;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+
+	& h3 {
+		font-weight: 400;
+		color: black;
+		font-size: 22px;
+	}
+}
+
+%contact {
+	flex: 1;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+
+	& img {
+		margin-bottom: 40px;
+		width: 100px;
+		transition: transform ease-out 200ms;
+
+		&:hover {
+			transform: scale(0.9);
+		}
+	}
+}
