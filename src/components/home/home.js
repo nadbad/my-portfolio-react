@@ -5,7 +5,6 @@ import CV from './sub-components/Nadeem Alhassan (Front-End Developer).pdf';
 export default function Home() {
 	const openCV = () => {
 		window.location.href = CV;
-		console.log('hellow');
 	};
 	return (
 		<div id='home-section'>
@@ -23,9 +22,11 @@ export default function Home() {
 					className='button-1'>
 					View My CV
 				</button>
-				<button onClick={null} type='button' className='button-2'>
-					Get In Touch
-				</button>
+				<a href='#contact-section'>
+					<button type='button' className='button-2'>
+						Get In Touch
+					</button>
+				</a>
 			</div>
 		</div>
 	);
