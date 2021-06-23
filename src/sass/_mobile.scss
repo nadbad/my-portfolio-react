@@ -7,6 +7,10 @@
 
 			& .burger-menu {
 				display: block;
+
+				& .open-slide {
+					display: block;
+				}
 			}
 		}
 	}

@@ -1,7 +1,4 @@
 import React from 'react';
-import { stack as Menu } from 'react-burger-menu';
-import { styles } from './menuStyles';
-
 import CV from './Nadeem Alhassan (Front-End Developer).pdf';
 
 window.addEventListener('scroll', function () {
@@ -14,6 +11,14 @@ window.addEventListener('scroll', function () {
 });
 
 export default function Navbar() {
+	const openSlideMenu = () => {
+		const side = document.getElementById('side-menu');
+		side.style.width = '300px';
+	};
+	const closeSlideMenu = () => {
+		const side = document.getElementById('side-menu');
+		side.style.width = '0px';
+	};
 	return (
 		<nav className='nav navbar fixed-top navbar-dark bg-dark'>
 			<a className='navbar-brand label' href='.'>
@@ -37,18 +42,37 @@ export default function Navbar() {
 				</a>
 			</div>
 			<div className='burger-menu'>
-				{' '}
-				<Menu styles={styles} right>
-					<a id='home' className='menu-item' href='/'>
+				<span className='open-slide' id='menu-slide'>
+					<a onClick={openSlideMenu}>
+						<svg width='30' height='30'>
+							<path d='M0,5 30,5' strokeWidth='5' />
+							<path d='M0,14 30,14' strokeWidth='5' />
+							<path d='M0,23 30,23' strokeWidth='5' />
+						</svg>
+					</a>
+				</span>
+				<div
+					id='side-menu'
+					className='side-nav'
+					onClick={closeSlideMenu}>
+					<a className='side-menu-link home' href='#home-section'>
 						Home
 					</a>
-					<a id='about' className='menu-item' href='/about'>
-						About
+					<a className='side-menu-link' href='#about-section'>
+						About me
 					</a>
-					<a id='contact' className='menu-item' href='/contact'>
+					<a className='side-menu-link' href='#portfolio-section'>
+						Portfolio
+					</a>
+					<a
+						className='side-menu-link'
+						href='../Nadeem Alhassan Resume.pdf'>
+						View CV
+					</a>
+					<a className='side-menu-link' href='#contact-section'>
 						Contact
 					</a>
-				</Menu>
+				</div>
 			</div>
 		</nav>
 	);
