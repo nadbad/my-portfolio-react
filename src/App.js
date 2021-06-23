@@ -6,7 +6,7 @@ import Copyright from './components/copyright/copyright';
 
 function App() {
 	return (
-		<div>
+		<div className='parent'>
 			<Home />
 			<AboutMe />
 			<Projects />

@@ -1,0 +1,179 @@
+@media only screen and(max-width: 1000px) {
+	#home-section {
+		& .nav.navbar.fixed-top.navbar-dark.bg-dark {
+			& .right {
+				display: none;
+			}
+
+			& .burger-menu {
+				display: block;
+			}
+		}
+	}
+
+	#about-section {
+		height: fit-content;
+		background-image: none;
+		padding-bottom: 60px;
+	}
+
+	#portfolio-section {
+		& .projects {
+			width: 80%;
+			display: block;
+			margin-bottom: 100px;
+		}
+
+		& .project {
+			width: 100%;
+			margin-bottom: 30px;
+			position: relative;
+			display: block;
+		}
+	}
+
+	#contact-section {
+		padding-bottom: 30px;
+		height: fit-content;
+
+		& .contact-me {
+			display: block;
+
+			& p {
+				display: none;
+			}
+
+			& .section-1-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-2-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-3-contact {
+				margin-bottom: 45px;
+			}
+		}
+	}
+}
+
+@media only screen and(max-width: 700px) {
+	#home-section {
+		& .nav.navbar.fixed-top.navbar-dark.bg-dark {
+			& .right {
+				display: none;
+			}
+		}
+	}
+
+	#about-section {
+		height: fit-content;
+		background-image: none;
+		padding-bottom: 60px;
+	}
+
+	#portfolio-section {
+		& .projects {
+			width: 80%;
+			display: block;
+			margin-bottom: 100px;
+		}
+
+		& .project {
+			width: 100%;
+			margin-bottom: 30px;
+			position: relative;
+			display: block;
+		}
+	}
+
+	#contact-section {
+		padding-bottom: 30px;
+		height: fit-content;
+
+		& .contact-me {
+			display: block;
+
+			& p {
+				display: none;
+			}
+
+			& .section-1-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-2-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-3-contact {
+				margin-bottom: 45px;
+			}
+		}
+	}
+}
+
+@media only screen and(max-width: 500px) {
+	#home-section {
+		& .nav.navbar.fixed-top.navbar-dark.bg-dark {
+			& .right {
+				display: none;
+			}
+		}
+	}
+
+	#about-section {
+		height: fit-content;
+		background-image: none;
+		padding-bottom: 60px;
+	}
+
+	#portfolio-section {
+		& .projects {
+			width: 80%;
+			display: block;
+			margin-bottom: 100px;
+		}
+
+		& .project {
+			width: 100%;
+			margin-bottom: 30px;
+			position: relative;
+			display: block;
+
+			& .image-overlay {
+				width: 80%;
+
+				& p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	#contact-section {
+		padding-bottom: 30px;
+		height: fit-content;
+
+		& .contact-me {
+			display: block;
+
+			& p {
+				display: none;
+			}
+
+			& .section-1-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-2-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-3-contact {
+				margin-bottom: 45px;
+			}
+		}
+	}
+}

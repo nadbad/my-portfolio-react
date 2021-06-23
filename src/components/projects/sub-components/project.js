@@ -15,12 +15,12 @@ export default function Project(name) {
 					<div>
 						<a href={name.demoLink} target='_blank'>
 							<button className='project-btn1'>
-								Demo <i class='fas fa-angle-right'></i>
+								Demo <i className='fas fa-angle-right'></i>
 							</button>
 						</a>
 						<a href={name.codeLink} target='_blank'>
 							<button className='project-btn2'>
-								Code <i class='fas fa-angle-right'></i>
+								Code <i className='fas fa-angle-right'></i>
 							</button>
 						</a>
 					</div>
