@@ -22,10 +22,10 @@ html {
 
 .loading-screen {
   position: absolute;
-  top: 50%;
   left: 50%;
-  -webkit-transition: opacity ease-in 1000ms;
-  transition: opacity ease-in 1000ms;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #home-section {
@@ -789,6 +789,9 @@ html {
   }
   #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark .burger-menu .open-slide {
     display: block;
+  }
+  #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark .navbar-brand.label {
+    margin-left: 10px;
   }
   #about-section {
     height: -webkit-fit-content;
