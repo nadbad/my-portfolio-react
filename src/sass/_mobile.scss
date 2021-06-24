@@ -1,6 +1,29 @@
 @media only screen and(max-width: 1000px) {
 	#home-section {
 		& .nav.navbar.fixed-top.navbar-dark.bg-dark {
+			&.sticky {
+				&.long {
+					& .burger-menu {
+						& .open-slide {
+							margin-right: 10px;
+						}
+					}
+
+					& .navbar-brand.label {
+						margin-left: 10px;
+					}
+				}
+				& .burger-menu {
+					& .open-slide {
+						margin-right: 10px;
+					}
+				}
+
+				& .navbar-brand.label {
+					margin-left: 10px;
+				}
+			}
+
 			& .right {
 				display: none;
 			}
@@ -10,6 +33,7 @@
 
 				& .open-slide {
 					display: block;
+					margin-right: 10px;
 				}
 			}
 

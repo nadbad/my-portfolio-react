@@ -647,7 +647,7 @@ html {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 90px;
   background-color: #fcfcfc;
-  height: 60vh;
+  height: 45vh;
   width: 100%;
 }
 
@@ -666,38 +666,6 @@ html {
           justify-content: center;
   margin-right: 100px;
   margin-left: 100px;
-}
-
-#contact-section .contact-me .fancy-link {
-  font-size: 18px;
-  text-decoration: none;
-  color: #0066ff;
-  position: relative;
-}
-
-#contact-section .contact-me .fancy-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: currentColor;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 250ms ease-out;
-  transition: -webkit-transform 250ms ease-out;
-  transition: transform 250ms ease-out;
-  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
-}
-
-#contact-section .contact-me .fancy-link:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
 }
 
 .copyright {
@@ -781,6 +749,18 @@ html {
 }
 
 @media only screen and (max-width: 1000px) {
+  #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark.sticky.long .burger-menu .open-slide {
+    margin-right: 10px;
+  }
+  #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark.sticky.long .navbar-brand.label {
+    margin-left: 10px;
+  }
+  #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark.sticky .burger-menu .open-slide {
+    margin-right: 10px;
+  }
+  #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark.sticky .navbar-brand.label {
+    margin-left: 10px;
+  }
   #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark .right {
     display: none;
   }
@@ -789,6 +769,7 @@ html {
   }
   #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark .burger-menu .open-slide {
     display: block;
+    margin-right: 10px;
   }
   #home-section .nav.navbar.fixed-top.navbar-dark.bg-dark .navbar-brand.label {
     margin-left: 10px;
