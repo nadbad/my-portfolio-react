@@ -24,8 +24,8 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transition: ease-in 1000ms;
-  transition: ease-in 1000ms;
+  -webkit-transition: opacity ease-in 1000ms;
+  transition: opacity ease-in 1000ms;
 }
 
 #home-section {
