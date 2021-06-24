@@ -64,9 +64,7 @@ export default function Navbar() {
 					<a className='side-menu-link' href='#portfolio-section'>
 						Portfolio
 					</a>
-					<a
-						className='side-menu-link'
-						href='../Nadeem Alhassan Resume.pdf'>
+					<a className='side-menu-link' href={CV}>
 						View CV
 					</a>
 					<a className='side-menu-link' href='#contact-section'>
