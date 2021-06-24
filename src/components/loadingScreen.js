@@ -7,7 +7,7 @@ export default function LoadingScreen() {
 		<motion.div
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			transition={{ duration: 1 }}>
+			transition={{ duration: 0.5 }}>
 			<div className='loading-screen' id='swup'>
 				<img src={loader} alt='' id='loader' />
 			</div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../home/sub-components/navbar';
 import CV from './sub-components/Nadeem Alhassan (Front-End Developer).pdf';
-import { motion } from 'framer-motion';
 
 export default function Home() {
 	const openCV = () => {
@@ -9,32 +8,27 @@ export default function Home() {
 	};
 
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ duration: 1.5 }}>
-			<div id='home-section'>
-				<Navbar />
+		<div id='home-section'>
+			<Navbar />
 
-				<div>
-					<h1>Nadeem Alhassan</h1>
-					<p>Front-End Developer</p>
-				</div>
-
-				<div>
-					<button
-						onClick={() => openCV()}
-						type='button'
-						className='button-1'>
-						View My CV
-					</button>
-					<a href='#contact-section'>
-						<button type='button' className='button-2'>
-							Get In Touch
-						</button>
-					</a>
-				</div>
+			<div>
+				<h1>Nadeem Alhassan</h1>
+				<p>Front-End Developer</p>
 			</div>
-		</motion.div>
+
+			<div>
+				<button
+					onClick={() => openCV()}
+					type='button'
+					className='button-1'>
+					View My CV
+				</button>
+				<a href='#contact-section'>
+					<button type='button' className='button-2'>
+						Get In Touch
+					</button>
+				</a>
+			</div>
+		</div>
 	);
 }
