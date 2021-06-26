@@ -32,33 +32,33 @@ export default function Projects() {
 						name=''
 						image={Project1}
 						background={Background}
-						description='A website made for a scanalation group'
-						demoLink='https://mangadods.netlify.app/'
-						codeLink='https://github.com/nadbad/MangaDoDs-Website'
+						description='Dummy data'
+						demoLink=''
+						codeLink='https://github.com/nadbad/'
 					/>
 					<Project
 						name=''
 						image={Project1}
 						background={Background}
-						description='A website made for a scanalation group'
-						demoLink='https://mangadods.netlify.app/'
-						codeLink='https://github.com/nadbad/MangaDoDs-Website'
+						description='Dummy data'
+						demoLink=''
+						codeLink='https://github.com/nadbad/'
 					/>
 					<Project
 						name=''
 						image={Project1}
 						background={Background}
-						description='A website made for a scanalation group'
-						demoLink='https://mangadods.netlify.app/'
-						codeLink='https://github.com/nadbad/MangaDoDs-Website'
+						description='Dummy data'
+						demoLink=''
+						codeLink='https://github.com/nadbad/'
 					/>
 					<Project
 						name=''
 						image={Project1}
 						background={Background}
-						description='A website made for a scanalation group'
-						demoLink='https://mangadods.netlify.app/'
-						codeLink='https://github.com/nadbad/MangaDoDs-Website'
+						description='Dummy data'
+						demoLink=''
+						codeLink='https://github.com/nadbad/'
 					/>
 				</div>
 			</div>

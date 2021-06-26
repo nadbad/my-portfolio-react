@@ -1,7 +1,7 @@
 import React from 'react';
-import Github from './github.png';
-import Gmail from './mail.png';
-import Linkedin from './linkedin.png';
+import Github from '../../../Images/github.png';
+import Gmail from '../../../Images/mail.png';
+import Linkedin from '../../../Images/linkedin.png';
 
 export default function ContactInfo() {
 	return (
