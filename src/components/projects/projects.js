@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './sub-components/project';
-import Background from '../../Images/background-1.png';
+import Background from '../../Images/projectBackground.png';
 import Project1 from '../../Images/project-1.png';
 import Project2 from '../../Images/project-2.png';
 

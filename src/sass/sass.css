@@ -29,7 +29,7 @@ html {
 }
 
 #home-section {
-  background-image: url(../Images/background1-min.jpg);
+  background-image: url(../Images/homeBackground.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -435,9 +435,8 @@ html {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: justify;
+  align: justify;
   margin: 0 20% 0 20%;
 }
 
@@ -781,6 +780,10 @@ html {
     height: fit-content;
     background-image: none;
     padding-bottom: 60px;
+  }
+  #about-section .aboutMe p {
+    color: black;
+    font-size: 20px;
   }
   #portfolio-section .projects {
     width: 80%;

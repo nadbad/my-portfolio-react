@@ -31,7 +31,7 @@ html {
 }
 
 #home-section {
-	background-image: url(../Images/background1-min.jpg);
+	background-image: url(../Images/homeBackground.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
@@ -378,7 +378,8 @@ html {
 			font-size: 28px;
 			align-items: center;
 			align-content: center;
-			justify-content: center;
+			text-align: justify;
+			align: justify;
 			margin: 0 20% 0 20%;
 		}
 
