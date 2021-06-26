@@ -84,10 +84,10 @@ html {
   height: 100%;
   background: white;
   z-index: -1;
-  -webkit-transition: -webkit-transform 300ms ease-in;
-  transition: -webkit-transform 300ms ease-in;
-  transition: transform 300ms ease-in;
-  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-transition: -webkit-transform 350ms ease-in;
+  transition: -webkit-transform 350ms ease-in;
+  transition: transform 350ms ease-in;
+  transition: transform 350ms ease-in, -webkit-transform 350ms ease-in;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -120,10 +120,10 @@ html {
   height: 100%;
   background: black;
   z-index: -1;
-  -webkit-transition: -webkit-transform 300ms ease-in;
-  transition: -webkit-transform 300ms ease-in;
-  transition: transform 300ms ease-in;
-  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-transition: -webkit-transform 350ms ease-in;
+  transition: -webkit-transform 350ms ease-in;
+  transition: transform 350ms ease-in;
+  transition: transform 350ms ease-in, -webkit-transform 350ms ease-in;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -550,7 +550,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 80%;
+  width: 70%;
   -webkit-transition: opacity ease-out 350ms;
   transition: opacity ease-out 350ms;
   position: absolute;
@@ -571,6 +571,7 @@ html {
   outline: none;
   color: white;
   margin-right: 15px;
+  margin-top: 15px;
   width: 80px;
   height: 40px;
   border-radius: 5px;
