@@ -1,5 +1,6 @@
 import React from 'react';
-import Project from './sub-components/project';
+import ProjectLeft from './sub-components/projectLeft';
+import ProjectRight from './sub-components/projectRight';
 import Background from '../../Images/projectBackground.png';
 import Project1 from '../../Images/project-1.png';
 import Project2 from '../../Images/project-2.png';
@@ -12,53 +13,49 @@ export default function Projects() {
 			</div>
 			<div className='projects-container'>
 				<div className='projects'>
-					<Project
-						name=''
+					<ProjectLeft
+						name='MangaDoDs'
+						number='01'
+						position='Developer & Designer'
 						image={Project1}
-						background={Background}
-						description='A website made for a scanalation group'
-						demoLink='https://mangadods.netlify.app/'
-						codeLink='https://github.com/nadbad/MangaDoDs-Website'
+						description='
+						In 2019 I was the Lead Developer on the new Squarespace Homepage
+						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
+						client='Squarespace'
+						devStack='HTML5, Squarespace, Custom Framework'
 					/>
-					<Project
-						name=''
-						image={Project2}
-						background={Background}
-						description='Web app displaying all the countries around the world'
-						demoLink='https://aroundtheglobe.netlify.app/'
-						codeLink='https://github.com/nadbad/countries-around-globe'
-					/>
-					<Project
-						name=''
+					<ProjectRight
+						name='MangaDoDs'
+						number='02'
+						position='Developer & Designer'
 						image={Project1}
-						background={Background}
-						description='Dummy data'
-						demoLink=''
-						codeLink='https://github.com/nadbad/'
+						description='
+						In 2019 I was the Lead Developer on the new Squarespace Homepage
+						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
+						client='Squarespace'
+						devStack='HTML5, Squarespace, Custom Framework'
 					/>
-					<Project
-						name=''
+					<ProjectLeft
+						name='MangaDoDs'
+						number='03'
+						position='Developer & Designer'
 						image={Project1}
-						background={Background}
-						description='Dummy data'
-						demoLink=''
-						codeLink='https://github.com/nadbad/'
+						description='
+						In 2019 I was the Lead Developer on the new Squarespace Homepage
+						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
+						client='Squarespace'
+						devStack='HTML5, Squarespace, Custom Framework'
 					/>
-					<Project
-						name=''
+					<ProjectRight
+						name='MangaDoDs'
+						number='04'
+						position='Developer & Designer'
 						image={Project1}
-						background={Background}
-						description='Dummy data'
-						demoLink=''
-						codeLink='https://github.com/nadbad/'
-					/>
-					<Project
-						name=''
-						image={Project1}
-						background={Background}
-						description='Dummy data'
-						demoLink=''
-						codeLink='https://github.com/nadbad/'
+						description='
+						In 2019 I was the Lead Developer on the new Squarespace Homepage
+						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
+						client='Squarespace'
+						devStack='HTML5, Squarespace, Custom Framework'
 					/>
 				</div>
 			</div>

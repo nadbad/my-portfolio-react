@@ -90,7 +90,7 @@ html {
 
 	.button-2 {
 		@extend %btn;
-		background-color: rgb(0, 102, 255);
+		background-color: #3498db;
 		border: none;
 		color: white;
 		position: relative;
@@ -192,7 +192,7 @@ html {
 					transition: 0.3s;
 
 					&:hover {
-						color: rgb(0, 102, 255);
+						color: #3498db;
 					}
 				}
 
@@ -375,7 +375,7 @@ html {
 	& .aboutMe {
 		& p {
 			color: rgb(63, 63, 63);
-			font-size: 28px;
+			font-size: 24px;
 			align-items: center;
 			align-content: center;
 			text-align: justify;
@@ -385,7 +385,7 @@ html {
 
 		& .fancy-link {
 			text-decoration: none;
-			color: rgb(0, 102, 255);
+			color: #3498db;
 			position: relative;
 
 			&::after {
@@ -428,130 +428,278 @@ html {
 	}
 
 	& .projects {
-		width: 80%;
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		margin-bottom: 100px;
+		width: 100%;
 	}
 
-	& .project {
-		width: 30%;
-		margin-bottom: 30px;
-		position: relative;
-		display: flex;
+	//Project on the left
+	& .project-left {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 100px;
 
-		&:hover {
-			& #project-image {
-				opacity: 0;
-			}
-
-			& #project-image-background {
-				opacity: 1;
-			}
-
-			& .image-overlay {
-				opacity: 1;
-			}
-		}
-
-		& #project-image {
+		& .project-image {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 			width: 100%;
-			transition: opacity ease-out 350ms;
-		}
 
-		& #project-image-background {
-			width: 100%;
-			opacity: 0;
-			transition: opacity ease-out 350ms;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		& .image-overlay {
-			opacity: 0;
-			align-items: center;
-			text-align: center;
-			width: 70%;
-			transition: opacity ease-out 350ms;
-			position: absolute;
-			top: 40%;
-			left: 29%;
-			transform: translate(-25%, -25%);
-
-			& p {
-				font-size: 24px;
-				color: white;
-				font-family: $font;
+			& img {
+				width: 100%;
 			}
 
-			& .project-btn1 {
-				border: 2px solid #201a52;
-				outline: none;
-				color: white;
-				margin-right: 15px;
+			p {
+				font-family: 'Raleway', sans-serif;
+				text-align: right;
+				color: #222;
+				font-size: 30px;
+				font-weight: 500;
+			}
+		}
+
+		& .project-information {
+			padding: 10px;
+			display: grid;
+			grid-template-columns: 6fr 1fr;
+			width: 50%;
+
+			& .simple {
+				h2 {
+					font-family: 'Raleway', sans-serif;
+					color: #222;
+					font-size: 16px;
+					margin-bottom: 5px;
+					text-transform: uppercase;
+					letter-spacing: 0.005em;
+				}
+
+				p {
+					color: #222;
+					font-size: 14px;
+					font-weight: 400;
+					opacity: 0.5;
+				}
+			}
+
+			& .view-more {
+				text-align: start;
+
+				p {
+					color: #222;
+					font-size: 14px;
+					font-weight: 400;
+					opacity: 0.5;
+					margin: 0 0 0 0;
+					cursor: pointer;
+				}
+
+				& .view-website {
+					& .fancy-link {
+						position: relative;
+						text-decoration: none;
+						font-size: 14px;
+						opacity: 0.5;
+						color: #222;
+
+						&::after {
+							content: '';
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							width: 100%;
+							height: 1px;
+							background-color: currentColor;
+							transform: scaleX(0);
+							transform-origin: right;
+							transition: transform 250ms ease-out;
+						}
+
+						&:hover::after {
+							transform: scaleX(1);
+							transform-origin: left;
+						}
+					}
+				}
+			}
+		}
+
+		& .detailed-description {
+			opacity: 0;
+			width: 400px;
+			height: auto !important;
+			position: absolute;
+			left: 60%;
+			transition: ease-in-out 1000ms;
+			margin-top: -20%;
+
+			li {
+				list-style-type: none;
+
+				p {
+					font-family: 'JetBrains Mono', monospace;
+					opacity: 0.6;
+				}
+			}
+
+			& .info-description {
+				color: #000;
+				font-size: 13px;
+				line-height: 18px;
+				font-weight: 400;
+				font-family: 'Inconsolata', monospace;
+			}
+
+			& .info-title {
+				color: #2f2f2f;
+				font-size: 12px;
+				font-weight: 700;
 				margin-top: 15px;
-				width: 80px;
-				height: 40px;
-				border-radius: 5px;
-				background-color: #201a52;
-				transition: background-color ease-out 350ms;
-				position: relative;
-				cursor: pointer;
-				z-index: 1;
+				margin-bottom: 5px;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
 
-				&::after {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					border-radius: 5px;
-					width: 100%;
-					height: 100%;
-					background: #3f3785;
-					z-index: -1;
-					transition: transform 300ms ease-in;
-					transform: scale(0);
+	//Display info for project on left
+	& .project-left.display-info {
+		& .detailed-description {
+			opacity: 1;
+			transform: rotate(360deg);
+		}
+	}
+	//Display info for project on right
+	& .project-right.display-info {
+		& .detailed-description {
+			opacity: 1;
+			transform: rotate(360deg);
+		}
+	}
+
+	//Project on the right
+	& .project-right {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 100px;
+
+		& .project-image {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			width: 100%;
+
+			& img {
+				width: 100%;
+				transform: translate3d(1, 0, 0, 1, -236.625, 0);
+			}
+
+			p {
+				font-family: 'Raleway', sans-serif;
+				text-align: left;
+				color: #222;
+				font-size: 30px;
+				font-weight: 500;
+			}
+		}
+
+		& .project-information {
+			padding: 10px;
+			display: grid;
+			grid-template-columns: 6fr 1fr;
+			width: 50%;
+			margin-left: 50%;
+
+			& .simple {
+				h2 {
+					font-family: 'Raleway', sans-serif;
+					color: #222;
+					font-size: 16px;
+					margin-bottom: 5px;
+					text-transform: uppercase;
+					letter-spacing: 0.005em;
 				}
 
-				&:hover::after {
-					transform: scale(1);
+				p {
+					color: #222;
+					font-size: 14px;
+					font-weight: 400;
+					opacity: 0.5;
 				}
 			}
 
-			& .project-btn2 {
-				border: 2px solid #201a52;
-				outline: none;
-				color: white;
+			& .view-more {
+				text-align: start;
 
-				width: 80px;
-				height: 40px;
-				border-radius: 5px;
-				background-color: #201a52;
-				transition: background-color ease-out 350ms;
-				position: relative;
-				cursor: pointer;
-				z-index: 1;
-
-				&::after {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					border-radius: 5px;
-					width: 100%;
-					height: 100%;
-					background: #3f3785;
-					z-index: -1;
-					transition: transform 300ms ease-in;
-					transform: scale(0);
+				p {
+					color: #222;
+					font-size: 14px;
+					font-weight: 400;
+					opacity: 0.5;
+					margin: 0 0 0 0;
+					cursor: pointer;
 				}
 
-				&:hover::after {
-					transform: scale(1);
+				& .view-website {
+					& .fancy-link {
+						position: relative;
+						text-decoration: none;
+						font-size: 14px;
+						opacity: 0.5;
+						color: #222;
+
+						&::after {
+							content: '';
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							width: 100%;
+							height: 1px;
+							background-color: currentColor;
+							transform: scaleX(0);
+							transform-origin: right;
+							transition: transform 250ms ease-out;
+						}
+
+						&:hover::after {
+							transform: scaleX(1);
+							transform-origin: left;
+						}
+					}
 				}
+			}
+		}
+
+		& .detailed-description {
+			opacity: 0;
+			width: 22%;
+			height: auto !important;
+			position: absolute;
+			right: 60%;
+			transition: ease-in-out 1000ms;
+			margin-top: -20%;
+
+			li {
+				list-style-type: none;
+
+				p {
+					font-family: 'JetBrains Mono', monospace;
+					opacity: 0.6;
+				}
+			}
+
+			& .info-description {
+				color: #000;
+				font-size: 13px;
+				line-height: 18px;
+				font-weight: 400;
+				font-family: 'Inconsolata', monospace;
+			}
+
+			& .info-title {
+				color: #2f2f2f;
+				font-size: 12px;
+				font-weight: 700;
+				margin-top: 15px;
+				margin-bottom: 5px;
+				letter-spacing: 0.05em;
 			}
 		}
 	}
