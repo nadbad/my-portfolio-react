@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from './Nadeem Alhassan (Front-End Developer).pdf';
+import CV from './Nadeem Alhassan Resume (Front End Developer).pdf';
 
 window.addEventListener('scroll', function () {
 	var nav = document.querySelector('nav');

@@ -524,12 +524,12 @@ html {
 
 		& .detailed-description {
 			opacity: 0;
-			width: 400px;
+			width: 25%;
 			height: auto !important;
 			position: absolute;
 			left: 60%;
 			transition: ease-in-out 1000ms;
-			margin-top: -20%;
+			margin-top: -25%;
 
 			li {
 				list-style-type: none;
@@ -669,12 +669,12 @@ html {
 
 		& .detailed-description {
 			opacity: 0;
-			width: 22%;
+			width: 25%;
 			height: auto !important;
 			position: absolute;
 			right: 60%;
 			transition: ease-in-out 1000ms;
-			margin-top: -20%;
+			margin-top: -25%;
 
 			li {
 				list-style-type: none;

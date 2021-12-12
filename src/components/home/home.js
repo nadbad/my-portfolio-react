@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../home/sub-components/navbar';
-import CV from './sub-components/Nadeem Alhassan (Front-End Developer).pdf';
+import CV from './sub-components/Nadeem Alhassan Resume (Front End Developer).pdf';
 
 export default function Home() {
 	const openCV = () => {

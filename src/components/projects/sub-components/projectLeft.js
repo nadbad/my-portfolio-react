@@ -28,19 +28,6 @@ export default function ProjectLeft({
 				<img src={image} alt='Project img' />
 				<p>#{number}</p>
 			</div>
-			<div className='detailed-description'>
-				<p className='info-description'>{description}</p>
-				<ul>
-					<li>
-						<h1 className='info-title'>Client ¬</h1>
-						<p>{client}</p>
-					</li>
-					<li>
-						<h1 className='info-title'>Dev Stack ¬</h1>
-						<p>{devStack}</p>
-					</li>
-				</ul>
-			</div>
 			<div className='project-information'>
 				<div className='simple'>
 					<div className='name'>
@@ -60,6 +47,19 @@ export default function ProjectLeft({
 						</a>
 					</div>
 				</div>
+			</div>
+			<div className='detailed-description'>
+				<p className='info-description'>{description}</p>
+				<ul>
+					<li>
+						<h1 className='info-title'>Client ¬</h1>
+						<p>{client}</p>
+					</li>
+					<li>
+						<h1 className='info-title'>Dev Stack ¬</h1>
+						<p>{devStack}</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
