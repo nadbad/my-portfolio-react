@@ -8,6 +8,7 @@ export default function ProjectLeft({
 	number,
 	client,
 	devStack,
+	link,
 }) {
 	const projectId = `project-${number}`;
 	const projectClass = `project-right`;
@@ -43,7 +44,7 @@ export default function ProjectLeft({
 						<p onClick={displayMoreProjectInfo}>More Info - </p>
 					</div>
 					<div className='view-website'>
-						<a className='fancy-link' href=''>
+						<a className='fancy-link' href={link}>
 							Visit Website -{' '}
 						</a>
 					</div>
