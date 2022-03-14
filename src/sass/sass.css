@@ -808,7 +808,7 @@ html {
 
 .copyright {
   background-color: #363636;
-  height: 50px;
+  height: 60px;
   color: #737373;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -817,12 +817,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .copyright p {
   color: #bebebe;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 #about-section h2, #portfolio-section .portfolio-title h2, #contact-section .contact-title h2 {
@@ -884,6 +884,11 @@ html {
 #contact-section .contact-me .section-1-contact img:hover, #contact-section .contact-me .section-2-contact img:hover, #contact-section .contact-me .section-3-contact img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+#contact-section .contact-me .section-1-contact img:active, #contact-section .contact-me .section-2-contact img:active, #contact-section .contact-me .section-3-contact img:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @media only screen and (max-width: 1366px) {

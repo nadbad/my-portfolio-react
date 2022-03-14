@@ -43,7 +43,7 @@ export default function ProjectLeft({
 						<p onClick={displayMoreProjectInfo}>More Info - </p>
 					</div>
 					<div className='view-website'>
-						<a className='fancy-link' href={link}>
+						<a className='fancy-link' href={link} target='_'>
 							Visit Website -{' '}
 						</a>
 					</div>

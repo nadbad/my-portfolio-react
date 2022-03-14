@@ -38,7 +38,7 @@ export default function Navbar() {
 					View CV
 				</a>
 				<a className='navbar-brand right' href='#contact-section'>
-					Contact Me
+					Get In Touch
 				</a>
 			</div>
 			<div className='burger-menu'>
@@ -51,10 +51,7 @@ export default function Navbar() {
 						</svg>
 					</a>
 				</span>
-				<div
-					id='side-menu'
-					className='side-nav'
-					onClick={closeSlideMenu}>
+				<div id='side-menu' className='side-nav' onClick={closeSlideMenu}>
 					<a className='side-menu-link home' href='#home-section'>
 						Home
 					</a>

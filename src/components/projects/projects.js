@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectLeft from './sub-components/projectLeft';
 import ProjectRight from './sub-components/projectRight';
 import AroundTheGlobe from '../../Images/around-the-globe.jpg';
+import Cafe from '../../Images/cafe-lamah.jpg';
 
 export default function Projects() {
 	return (
@@ -26,42 +27,14 @@ export default function Projects() {
 					/>
 
 					<ProjectRight
-						name='MangaDoDs'
+						name='Lamah Cafe'
 						number='02'
 						position='Developer & Designer'
-						image={AroundTheGlobe}
-						description='
-						In 2019 I was the Lead Developer on the new Squarespace Homepage
-						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
-						client='Squarespace'
-						devStack='HTML5, Squarespace, Custom Framework'
-						link=''
-					/>
-
-					<ProjectLeft
-						name='MangaDoDs'
-						number='03'
-						position='Developer & Designer'
-						image={AroundTheGlobe}
-						description='
-						In 2019 I was the Lead Developer on the new Squarespace Homepage
-						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
-						client='Squarespace'
-						devStack='HTML5, Squarespace, Custom Framework'
-						link=''
-					/>
-
-					<ProjectRight
-						name='MangaDoDs'
-						number='04'
-						position='Developer & Designer'
-						image={AroundTheGlobe}
-						description='
-						In 2019 I was the Lead Developer on the new Squarespace Homepage
-						Applying our new branding and Building the page and the main carousel was an interesting challenge. It was a real team effort with the FrontSite Team: Brandon, Crystal, Robyn and Cody. As part of this project we also build a brand new styleguide for all of Squarespace.com'
-						client='Squarespace'
-						devStack='HTML5, Squarespace, Custom Framework'
-						link=''
+						image={Cafe}
+						description='In the end of 2021 I was the lead developer on the new Lamah internal Cafe system. Applying our new branding and building the page and the main carousel was an interesting challenge. It was really fun working as the sole frontend developer on the project since I had to get creative at times to meet our wants and needs.'
+						client='Lamah'
+						devStack='React, Redux, Scss & Framer Motion'
+						link='https://lamah.com/'
 					/>
 				</div>
 			</div>
