@@ -364,7 +364,8 @@ html {
 	background-color: $bg-color-1;
 	background-image: url(../Images/background-about.png);
 	background-repeat: no-repeat;
-	background-position: 400px 150px;
+	background-position: 300px 100px;
+	background-size: 30%;
 	height: 800px;
 	width: 100%;
 
@@ -375,11 +376,10 @@ html {
 	& .aboutMe {
 		& p {
 			color: rgb(63, 63, 63);
-			font-size: 24px;
+			font-size: 20px;
 			align-items: center;
 			align-content: center;
 			text-align: justify;
-			align: justify;
 			margin: 0 20% 0 20%;
 		}
 
@@ -710,16 +710,10 @@ html {
 	padding-top: 90px;
 	background-color: $bg-color-1;
 	height: 45vh;
-	width: 100%;
 
 	& .contact-me {
-		display: flex;
-		align-items: center;
-		align-content: center;
-		text-align: center;
-		justify-content: center;
-		margin-right: 100px;
-		margin-left: 100px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 
 		& .section-1-contact {
 			@extend %contact;
@@ -747,6 +741,7 @@ html {
 	align-items: center;
 	text-align: center;
 	font-size: 18px;
+	margin-top: 90px;
 
 	& p {
 		color: rgb(190, 190, 190);

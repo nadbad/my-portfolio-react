@@ -1,4 +1,13 @@
 @media only screen and(max-width: 1366px) {
+	#about-section {
+		height: 500px;
+		.aboutMe {
+			& p {
+				font-size: 16px;
+			}
+		}
+	}
+
 	#portfolio-section {
 		//Project on the left
 		& .project-left {
