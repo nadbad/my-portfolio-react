@@ -1,3 +1,63 @@
+@media only screen and(max-width: 1366px) {
+	#portfolio-section {
+		//Project on the left
+		& .project-left {
+			& .project-information {
+				grid-template-columns: 4fr 1fr;
+			}
+
+			& .detailed-description {
+				width: 25%;
+				left: 55%;
+				margin-top: -30%;
+			}
+		}
+
+		//Project on the right
+		& .project-right {
+			& .project-information {
+				grid-template-columns: 4fr 1fr;
+			}
+
+			& .detailed-description {
+				width: 25%;
+				right: 55%;
+				margin-top: -30%;
+			}
+		}
+	}
+}
+
+@media only screen and(max-width: 1200px) {
+	#portfolio-section {
+		//Project on the left
+		& .project-left {
+			& .project-information {
+				grid-template-columns: 3fr 1fr;
+			}
+
+			& .detailed-description {
+				width: 33%;
+				right: 52%;
+				margin-top: -32%;
+			}
+		}
+
+		//Project on the right
+		& .project-right {
+			& .project-information {
+				grid-template-columns: 3fr 1fr;
+			}
+
+			& .detailed-description {
+				width: 33%;
+				right: 52%;
+				margin-top: -32%;
+			}
+		}
+	}
+}
+
 @media only screen and(max-width: 1000px) {
 	#home-section {
 		& .nav.navbar.fixed-top.navbar-dark.bg-dark {
@@ -46,9 +106,10 @@
 	#about-section {
 		height: fit-content;
 		background-image: none;
-		padding-bottom: 60px;
 
 		& .aboutMe {
+			margin-bottom: 100px;
+
 			& p {
 				color: black;
 				font-size: 20px;
@@ -113,17 +174,79 @@
 	}
 
 	#portfolio-section {
-		& .projects {
+		& .project-left {
 			width: 80%;
-			display: block;
+			margin-right: auto;
+			margin-left: auto;
 			margin-bottom: 100px;
+			transition: position ease-in-out 1000ms;
+			position: relative;
+
+			& .project-image {
+				display: grid;
+				grid-template-columns: 85% 15%;
+				width: 100%;
+			}
+
+			& .project-information {
+				padding: 10px;
+				display: grid;
+				grid-template-columns: 3fr 1fr;
+				width: 85%;
+			}
+
+			& .detailed-description {
+				opacity: 0;
+				width: 85%;
+				height: auto !important;
+				left: 0;
+				transition: ease-in-out 1500ms;
+				margin-top: 5%;
+			}
 		}
 
-		& .project {
-			width: 100%;
-			margin-bottom: 30px;
+		& .project-right {
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 100px;
+			transition: position ease-in-out 1000ms;
 			position: relative;
-			display: block;
+
+			& .project-image {
+				display: grid;
+				grid-template-columns: 15% 85%;
+				width: 100%;
+			}
+
+			& .project-information {
+				padding: 10px;
+				display: grid;
+				grid-template-columns: 3fr 1fr;
+				width: 85%;
+				margin-left: 15%;
+			}
+
+			& .detailed-description {
+				opacity: 0;
+				width: 85%;
+				height: auto !important;
+				right: 0;
+				transition: ease-in-out 1500ms;
+				margin-top: 5%;
+				margin-left: 15%;
+			}
+		}
+
+		& .project-left.display-info {
+			& .detailed-description {
+				position: relative;
+			}
+		}
+		& .project-right.display-info {
+			& .detailed-description {
+				position: relative;
+			}
 		}
 	}
 
@@ -169,24 +292,70 @@
 	}
 
 	#portfolio-section {
-		& .projects {
-			width: 80%;
-			display: block;
-			margin-bottom: 100px;
+		& .project-left {
+			& .project-image {
+				grid-template-columns: 80% 20%;
+			}
+
+			& .project-information {
+				grid-template-columns: 60% 40%;
+				width: 80%;
+				margin-right: 20%;
+			}
+
+			& .detailed-description {
+				opacity: 0;
+				width: 80%;
+				height: auto !important;
+				left: 0;
+				transition: ease-in-out 1500ms;
+				margin-top: 5%;
+			}
 		}
 
-		& .project {
-			width: 100%;
-			margin-bottom: 30px;
-			position: relative;
+		& .project-right {
+			& .project-image {
+				grid-template-columns: 20% 80%;
+			}
+
+			& .project-information {
+				grid-template-columns: 60% 40%;
+				width: 80%;
+				margin-left: 20%;
+			}
+
+			& .detailed-description {
+				opacity: 0;
+				width: 80%;
+				height: auto !important;
+				transition: ease-in-out 1500ms;
+				margin-top: 5%;
+				margin-left: 20%;
+			}
+		}
+	}
+
+	#contact-section {
+		padding-bottom: 30px;
+		height: fit-content;
+
+		& .contact-me {
 			display: block;
 
-			& .image-overlay {
-				width: 80%;
+			& p {
+				display: none;
+			}
 
-				& p {
-					font-size: 18px;
-				}
+			& .section-1-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-2-contact {
+				margin-bottom: 45px;
+			}
+
+			& .section-3-contact {
+				margin-bottom: 45px;
 			}
 		}
 	}

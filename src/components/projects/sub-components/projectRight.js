@@ -8,6 +8,7 @@ export default function ProjectLeft({
 	number,
 	client,
 	devStack,
+	link,
 }) {
 	const projectId = `project-${number}`;
 	const projectClass = `project-right`;
@@ -28,19 +29,7 @@ export default function ProjectLeft({
 				<p>#{number}</p>
 				<img src={image} alt='Project img' />
 			</div>
-			<div className='detailed-description'>
-				<p className='info-description'>{description}</p>
-				<ul>
-					<li>
-						<h1 className='info-title'>Client ¬</h1>
-						<p>{client}</p>
-					</li>
-					<li>
-						<h1 className='info-title'>Dev Stack ¬</h1>
-						<p>{devStack}</p>
-					</li>
-				</ul>
-			</div>
+
 			<div className='project-information'>
 				<div className='simple'>
 					<div className='name'>
@@ -55,11 +44,24 @@ export default function ProjectLeft({
 						<p onClick={displayMoreProjectInfo}>More Info - </p>
 					</div>
 					<div className='view-website'>
-						<a className='fancy-link' href=''>
+						<a className='fancy-link' href={link} target='_'>
 							Visit Website -{' '}
 						</a>
 					</div>
 				</div>
+			</div>
+			<div className='detailed-description'>
+				<p className='info-description'>{description}</p>
+				<ul>
+					<li>
+						<h1 className='info-title'>Client ¬</h1>
+						<p>{client}</p>
+					</li>
+					<li>
+						<h1 className='info-title'>Dev Stack ¬</h1>
+						<p>{devStack}</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
