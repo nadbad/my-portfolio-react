@@ -709,7 +709,7 @@ html {
 	font-family: $font;
 	padding-top: 90px;
 	background-color: $bg-color-1;
-	height: 45vh;
+	height: 65vh;
 
 	& .contact-me {
 		display: grid;
@@ -741,7 +741,6 @@ html {
 	align-items: center;
 	text-align: center;
 	font-size: 18px;
-	margin-top: 90px;
 
 	& p {
 		color: rgb(190, 190, 190);
