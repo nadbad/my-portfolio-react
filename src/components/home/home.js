@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../home/sub-components/navbar';
-import CV from './sub-components/Nadeem Alhassan Resume (Front End Developer).pdf';
+import CV from '../Nadeem Alhassan Resume (Front End Developer).pdf';
 
 export default function Home() {
 	const openCV = () => {
@@ -17,10 +17,7 @@ export default function Home() {
 			</div>
 
 			<div>
-				<button
-					onClick={() => openCV()}
-					type='button'
-					className='button-1'>
+				<button onClick={() => openCV()} type='button' className='button-1'>
 					View My CV
 				</button>
 				<a href='#contact-section'>
